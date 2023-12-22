@@ -1,0 +1,22 @@
+[project]
+name = "failable_response"
+version = "1.0.0"
+description = "A response object that can Represent a failed state."
+authors = [
+    {name = "Matt Zhang", email = "set.stun@gmail.com"},
+]
+dependencies = [
+    "pydantic>=2.5.2",
+]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.4.3",
+]
